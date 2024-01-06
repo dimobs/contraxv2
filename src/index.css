@@ -36,10 +36,13 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  /* min-width: 320px; */
+  min-width: 612px;
   min-height: 100vh;
    background:-moz-linear-gradient(top, #BF7A30 30%, #EDD599); 
    background:-webkit-linear-gradient(top, #BF7A30 30%, #EDD599); 
+   box-sizing: border-box;
+
 }
 
 #root {
@@ -84,8 +87,3 @@ button:focus-visible {
   }
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}

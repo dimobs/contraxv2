@@ -5,7 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import SignatureCanvas from 'react-signature-canvas';
 import { useState } from 'react';
-import './StyleFile.css'
+import './StyleFile.css';
+import { Container } from 'react-bootstrap';
 
 
 function Home() {
@@ -17,7 +18,8 @@ const handleClear = (e) => {
 }
 
   return (
-    <div>
+
+     <Container style={{ border: '2px black', width: '100%', maxWidth: '500px', margin: 'auto', marginBottom: '20px' }}>
     <Form  >
       <Row  className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail" >
@@ -66,7 +68,7 @@ const handleClear = (e) => {
       </Form.Group>
       <fieldset>
         <Form.Group as={Row} className="mb-3">
-          <Form.Label as="legend" column sm={2}>
+          <Form.Label as="legend" column sm={2} className='col-form-label'>
             Radios
           </Form.Label>
           <Col sm={10}>
@@ -92,7 +94,7 @@ const handleClear = (e) => {
         </Form.Group>
 
 
-<div style={{border:'2px solid black', with:300, height:200, marginBottom:'20px' }}>
+        <div style={{ border: '2px solid black', width: '100%', maxWidth: '500px', margin: 'auto', marginBottom: '20px' }}>
         <SignatureCanvas  penColor='green'
     canvasProps={{width: 500, height: 200, className: 'sigCanvas'}} 
     ref={data=> setSign(data)}
@@ -136,7 +138,7 @@ const handleClear = (e) => {
         Submit
       </Button>
     </Form>
-    </div>
+    </Container>
   );
 }
 

@@ -21,6 +21,19 @@ label input[type="radio"] ~ span:before {
     box-sizing: border-box;
     transition: all 300ms ease-in-out;
 }
-label input[type="radio"]:checked ~ span:before {
-    border: 5px solid #29d;
-}
+
+@media (max-width: 768px) {
+    body{
+        -webkit-text-size-adjust: 100%;
+    }
+    body:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+        height: 100px;
+        z-index: 100;
+        box-sizing: inherit;
+    }
+  }
