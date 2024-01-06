@@ -19,7 +19,7 @@ const handleClear = (e) => {
 
   return (
 
-     <Container style={{ border: '2px black', width: '100%', maxWidth: '500px', margin: 'auto', marginBottom: '20px' }}>
+     <Container style={{ width: 'auto', maxWidth: '400px', margin:'auto', marginBottom: '20px' }}>
     <Form  >
       <Row  className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail" >
@@ -94,9 +94,10 @@ const handleClear = (e) => {
         </Form.Group>
 
 
-        <div style={{ border: '2px solid black', width: '100%', maxWidth: '500px', margin: 'auto', marginBottom: '20px' }}>
-        <SignatureCanvas  penColor='green'
-    canvasProps={{width: 500, height: 200, className: 'sigCanvas'}} 
+        <div style={{ border: '2px solid black', width: '100%', maxWidth: '500px', margin: 'auto', marginBottom: '20px', overflow:'hidden'}}>
+          <label>Singn here</label>
+        <SignatureCanvas  penColor='green' backgroundColor='white' width=""
+    canvasProps={{width: 500, height: 200, className: 'sigCanvas' }}
     ref={data=> setSign(data)}
     
     />

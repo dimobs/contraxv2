@@ -37,12 +37,12 @@ body {
   display: flex;
   place-items: center;
   /* min-width: 320px; */
-  min-width: 612px;
+  /* min-width: 650px; */
+  width: auto;
   min-height: 100vh;
    background:-moz-linear-gradient(top, #BF7A30 30%, #EDD599); 
    background:-webkit-linear-gradient(top, #BF7A30 30%, #EDD599); 
    box-sizing: border-box;
-
 }
 
 #root {
