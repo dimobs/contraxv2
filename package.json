@@ -11,11 +11,14 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@react-pdf/renderer": "^3.1.14",
     "bootstrap": "^5.3.2",
     "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.2",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.3",
     "react-icons": "^4.12.0",
     "react-pdf": "^7.6.0",
     "react-router-dom": "^6.21.1",
