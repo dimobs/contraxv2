@@ -1,0 +1,41 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: none; */
+    min-width: 300px;
+}
+
+input {
+    display: block;
+    border-radius: 6px;
+    background-color: transparent;  
+    border: 3px solid green;      
+}
+
+::placeholder {
+    color: yellow;
+    opacity: 1; /* Firefox */
+  }
+
+.agreeCH{
+    
+    display: inline;
+  margin-right: 10px;
+}
+
+select {
+    color: yellow;
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+.side-logo {
+  background-image: url(https://comnet.bg/sites/default/files/logosmall.jpg);
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: 30%;
+  margin: 20px;
+  display: block;
+  padding: 80px;
+}
